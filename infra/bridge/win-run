@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Wrapper script for win-run CLI
+PYTHON_BIN=$(command -v python3 || command -v python)
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do
+  DIR="$(cd -P "$(dirname "$SOURCE")" && pwd)"
+  SOURCE="$(readlink "$SOURCE")"
+  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+done
+SCRIPT_DIR="$(cd -P "$(dirname "$SOURCE")" && pwd)"
+exec "$PYTHON_BIN" "$SCRIPT_DIR/cli.py" "$@"

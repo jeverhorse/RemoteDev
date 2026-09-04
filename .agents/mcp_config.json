@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "remotedev-hybrid": {
+      "command": "python",
+      "args": [
+        "d:/MATIN/projects/Mangene/RemoteDev/infra/bridge/mcp_server.py"
+      ],
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}

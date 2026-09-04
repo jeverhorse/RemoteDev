@@ -1,0 +1,15 @@
+services:
+  linux_agent:
+    build:
+      context: ../..
+      dockerfile: infra/docker/Dockerfile
+    container_name: remotedev-linux-agent
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - WINDOWS_HOST=host.docker.internal
+      - LINUX_WORKSPACE=/workspace/project
+      - REMOTEDEV_CONFIG=/infra/config/config.yaml
+    stdin_open: true
+    tty: true
+    restart: unless-stopped

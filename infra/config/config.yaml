@@ -1,0 +1,55 @@
+# RemoteDev Hybrid Development Environment Configuration
+server:
+  host: "0.0.0.0"
+  port: 8765
+  token: "remotedev-secret-hybrid-token-2026"
+
+workspace:
+  # Path on the Windows host machine (absolute or relative to RemoteDev root)
+  windows_path: "d:/MATIN/projects/Mangene/RemoteDev/workspace"
+  # Path inside the Linux container / Colab environment
+  linux_path: "/workspace/project"
+
+sync:
+  debounce_ms: 200
+  max_file_size_mb: 50
+  ignore_patterns:
+    - ".git/**"
+    - ".dart_tool/**"
+    - "build/**"
+    - "node_modules/**"
+    - "__pycache__/**"
+    - "*.pyc"
+    - ".idea/**"
+    - ".vscode/**"
+    - "*.tmp"
+    - "*~"
+    - "*.swp"
+    - "*.conflict_*"
+    - "infra/**"
+    - ".env"
+    - ".env.*"
+
+execution:
+  default_timeout_sec: 120
+  allowed_shells:
+    - "powershell"
+    - "cmd"
+    - "bash"
+  buffer_flush_interval_ms: 50
+
+diagnostics:
+  history_limit: 50
+
+agent:
+  # Antigravity Review Policy: 'request-review' (requires approval for modifying tools), 'always-proceed', 'strict'
+  review_policy: "request-review"
+  # Default Gemini model used by the remote Linux agent
+  model: "gemini-2.5-flash"
+  # Real-time streaming flags
+  stream_thoughts: true
+  stream_file_access: true
+  # Directories to synchronize config and policies to Linux
+  sync_agent_configs:
+    - ".agents"
+

@@ -1,0 +1,22 @@
+2026-09-04 03:18:52,710 [INFO] [remotedev.sync] SyncEngine started for D:\MATIN\projects\Mangene\RemoteDev\workspace (3 files indexed)
+2026-09-04 03:18:52,712 [INFO] [remotedev.watcher] Using watchfiles (Rust notify) watcher for D:\MATIN\projects\Mangene\RemoteDev\workspace
+2026-09-04 03:18:52,737 [INFO] [remotedev.service] ============================================================
+2026-09-04 03:18:52,843 [INFO] [remotedev.service] RemoteDev Windows Host Executor running on http://0.0.0.0:8765
+2026-09-04 03:18:52,844 [INFO] [remotedev.service] Workspace Directory: D:\MATIN\projects\Mangene\RemoteDev\workspace
+2026-09-04 03:18:52,844 [INFO] [remotedev.service] ============================================================
+2026-09-04 03:18:53,740 [INFO] [aiohttp.access] 127.0.0.1 [04/Sep/2026:02:18:53 -0800] "GET /health HTTP/1.1" 200 213 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.9168"
+2026-09-04 03:18:54,856 [INFO] [aiohttp.access] 127.0.0.1 [04/Sep/2026:02:18:54 -0800] "GET /status HTTP/1.1" 200 589 "-" "Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.26200; en-US) PowerShell/7.4.19"
+2026-09-04 03:19:41,712 [INFO] [remotedev.sync] SyncEngine started for D:\MATIN\projects\Mangene\RemoteDev\workspace (3 files indexed)
+2026-09-04 03:19:41,713 [INFO] [remotedev.watcher] Using watchfiles (Rust notify) watcher for D:\MATIN\projects\Mangene\RemoteDev\workspace
+2026-09-04 03:19:41,724 [INFO] [remotedev.service] ============================================================
+2026-09-04 03:19:41,725 [INFO] [remotedev.service] RemoteDev Windows Host Executor running on http://0.0.0.0:8765
+2026-09-04 03:19:41,725 [INFO] [remotedev.service] Workspace Directory: D:\MATIN\projects\Mangene\RemoteDev\workspace
+2026-09-04 03:19:41,725 [INFO] [remotedev.service] ============================================================
+2026-09-04 03:19:41,800 [INFO] [aiohttp.access] 127.0.0.1 [04/Sep/2026:02:19:41 -0800] "GET /health HTTP/1.1" 200 232 "-" "Python-urllib/3.10"
+2026-09-04 10:08:41,672 [INFO] [remotedev.sync] SyncEngine started for D:\MATIN\projects\Mangene\RemoteDev\workspace (4 files indexed)
+2026-09-04 10:08:41,673 [INFO] [remotedev.watcher] Using watchfiles (Rust notify) watcher for D:\MATIN\projects\Mangene\RemoteDev\workspace
+2026-09-04 10:08:41,683 [INFO] [remotedev.service] ============================================================
+2026-09-04 10:08:41,683 [INFO] [remotedev.service] RemoteDev Windows Host Executor running on http://0.0.0.0:8765
+2026-09-04 10:08:41,683 [INFO] [remotedev.service] Workspace Directory: D:\MATIN\projects\Mangene\RemoteDev\workspace
+2026-09-04 10:08:41,683 [INFO] [remotedev.service] ============================================================
+2026-09-04 10:08:41,719 [INFO] [aiohttp.access] 127.0.0.1 [04/Sep/2026:09:08:41 -0800] "GET /health HTTP/1.1" 200 232 "-" "Python-urllib/3.10"
